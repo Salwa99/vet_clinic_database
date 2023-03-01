@@ -7,6 +7,8 @@ SELECT * FROM animals WHERE neutered;
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
+----------------------------------------------------------------
+
 BEGIN;
 UPDATE animals
 SET species = 'unspecified';
@@ -46,3 +48,18 @@ SET weight_kg = weight_kg * -1
 WHERE weight_kg < 0;
 
 COMMIT;
+
+select * from animals;
+
+----------------------------------------------------------------
+select COUNT(*) FROM animals;
+
+select COUNT(*) FROM animals WHERE escape_attempts = 0;
+
+select AVG(weight_kg) FROM animals;
+
+select neutered, SUM(escape_attempts) FROM animals GROUP BY neutered;
+
+select species, MAX(weight_kg), MIN(weight_kg) FROM animals GROUP BY species;
+
+select species, AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1990-1-1' AND '2000-12-31' GROUP BY species;
