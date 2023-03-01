@@ -27,3 +27,8 @@ ALTER TABLE animals DROP COLUMN id;
 ALTER TABLE animals ADD COLUMN id SERIAL PRIMARY KEY;
 
 ALTER TABLE animals DROP COLUMN species;
+
+ALTER TABLE animals ADD COLUMN species_id INT,
+  ADD CONSTRAINT fk_species
+  FOREIGN KEY (species_id)
+  REFERENCES species (id);
