@@ -33,3 +33,5 @@ select * from animals;
 BEGIN;
 DELETE FROM animals
 WHERE date_of_birth > '2022-1-1';
+
+SAVEPOINT pre_point;
