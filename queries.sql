@@ -13,7 +13,11 @@ BEGIN;
 UPDATE animals
 SET species = 'unspecified';
 
+select * from animals;
+
 ROLLBACK;
+
+select * from animals;
 
 BEGIN;
 UPDATE animals
@@ -23,10 +27,15 @@ UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
 
+select * from animals;
+
 COMMIT;
+select * from animals;
 
 BEGIN;
 DELETE FROM animals;
+
+select * from animals;
 
 ROLLBACK;
 
@@ -41,11 +50,17 @@ SAVEPOINT pre_point;
 UPDATE animals
 SET weight_kg = weight_kg * -1;
 
+select * from animals;
+
 ROLLBACK TO pre_point;
+
+select * from animals;
 
 UPDATE animals
 SET weight_kg = weight_kg * -1
 WHERE weight_kg < 0;
+
+select * from animals;
 
 COMMIT;
 
