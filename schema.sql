@@ -18,4 +18,8 @@ CREATE TABLE owners(
     age INT 
 );
 
+CREATE TABLE species(
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
 
