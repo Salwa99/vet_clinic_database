@@ -48,10 +48,10 @@ CREATE TABLE vets (
 );
 
 CREATE TABLE specializations (
-    vet_id INT,
+    vets_id INT,
     species_id INT,
-    PRIMARY KEY (vet_id, species_id),
-    FOREIGN KEY (vet_id) REFERENCES vets(id) ON DELETE CASCADE,
+    PRIMARY KEY (vets_id, species_id),
+    FOREIGN KEY (vets_id) REFERENCES vets(id) ON DELETE CASCADE,
     FOREIGN KEY (species_id) REFERENCES species(id) ON DELETE CASCADE
 );
 
@@ -63,5 +63,3 @@ CREATE TABLE visits (
     FOREIGN KEY (vet_id) REFERENCES vets(id) ON DELETE CASCADE,
     PRIMARY KEY (animals_id, vet_id, visits_date)
 );
-
-
