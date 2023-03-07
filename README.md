@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [N/A](<replace-with-your-deployment-URL>)
+### [Here is the schema diagram for the database](https://drawsql.app/teams/salwa-eden/diagrams/vet-clinic)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,6 +112,11 @@ git clone https://github.com/Salwa99/vet_clinic_database.git
 # 🔭 Future Features:
 - Add more query to manage the database.
 - Integrate back-end.
+
+👤 **Edenlisk**
+
+- GitHub: [@Edenlisk](https://github.com/edenlisk)
+- LinkedIn: [@Edenlisk](https://www.linkedin.com/in/nsanzimfura-enock-nkumbuyedeni/)
 
 
 # 🤝 Contributing:
