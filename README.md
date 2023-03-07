@@ -111,7 +111,7 @@ git clone https://github.com/Salwa99/vet_clinic_database.git
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/salwa-ballouti)
 
   
-👤 **Edenlisk*
+👤 **Edenlisk**
 - GitHub: [@Edenlisk](https://github.com/edenlisk)
 - LinkedIn: [@Edenlisk](https://www.linkedin.com/in/nsanzimfura-enock-nkumbuyedeni/)
   
