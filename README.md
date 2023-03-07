@@ -105,13 +105,13 @@ git clone https://github.com/Salwa99/vet_clinic_database.git
 ## 👥 Authors <a name="authors"></a>
 
 
-### 👤 Salwa Ballouti:
+### 👤 **Salwa Ballouti**:
 - GitHub: [@Salwa99](https://github.com/Salwa99)
 - Twitter: [@SalwaBallouti](https://twitter.com/salwa_ballouti)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/salwa-ballouti)
-  
-👤 **Edenlisk**
 
+  
+👤 **Edenlisk*
 - GitHub: [@Edenlisk](https://github.com/edenlisk)
 - LinkedIn: [@Edenlisk](https://www.linkedin.com/in/nsanzimfura-enock-nkumbuyedeni/)
   
