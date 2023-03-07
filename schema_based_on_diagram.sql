@@ -24,7 +24,7 @@ total_amount DECIMAL,
 generated_at TIMESTAMP,
 payed_at TIMESTAMP,
 CONSTRAINT FK_medical_history FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id)
-); 
+);
 
 create table invoices_items (
 id SERIAL PRIMARY KEY,
@@ -35,4 +35,23 @@ invoice_id INT,
 treatment_id INT,
 CONSTRAINT FK_invoice FOREIGN KEY (invoice_id) REFERENCES invoices (id),
 CONSTRAINT FK_treatment FOREIGN KEY (treatment_id) REFERENCES treatments (id)
+);
+
+
+CREATE INDEX patient_id_index
+ON medical_histories (patient_id);
+
+CREATE INDEX invoice_index
+ON invoices (medical_history_id);
+
+CREATE INDEX invoice_items_index
+ON invoices_items (invoice_id, treatment_id);
+
+
+CREATE TABLE invoice_treatment (
+  invoice_id INT,
+  treatment_id INT,
+  PRIMARY KEY (invoice_id, treatment_id),
+  CONSTRAINT FK_invoice FOREIGN KEY (invoice_id) REFERENCES invoices (id),
+  CONSTRAINT FK_treatment FOREIGN KEY (treatment_id) REFERENCES treatments (id)
 );
