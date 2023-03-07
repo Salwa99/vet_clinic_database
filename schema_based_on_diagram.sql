@@ -38,6 +38,14 @@ CONSTRAINT FK_treatment FOREIGN KEY (treatment_id) REFERENCES treatments (id)
 );
 
 
+CREATE TABLE invoice_treatment (
+  invoice_id INT,
+  treatment_id INT,
+  PRIMARY KEY (invoice_id, treatment_id),
+  CONSTRAINT FK_invoice FOREIGN KEY (invoice_id) REFERENCES invoices (id),
+  CONSTRAINT FK_treatment FOREIGN KEY (treatment_id) REFERENCES treatments (id)
+);
+
 CREATE INDEX patient_id_index
 ON medical_histories (patient_id);
 
@@ -47,11 +55,5 @@ ON invoices (medical_history_id);
 CREATE INDEX invoice_items_index
 ON invoices_items (invoice_id, treatment_id);
 
-
-CREATE TABLE invoice_treatment (
-  invoice_id INT,
-  treatment_id INT,
-  PRIMARY KEY (invoice_id, treatment_id),
-  CONSTRAINT FK_invoice FOREIGN KEY (invoice_id) REFERENCES invoices (id),
-  CONSTRAINT FK_treatment FOREIGN KEY (treatment_id) REFERENCES treatments (id)
-);
+CREATE INDEX invoice_treatment_index
+ON invoice_treatment (invoice_id, treatment_id);
