@@ -114,7 +114,7 @@ git clone https://github.com/Salwa99/vet_clinic_database.git
 
 - GitHub: [@Edenlisk](https://github.com/edenlisk)
 - LinkedIn: [@Edenlisk](https://www.linkedin.com/in/nsanzimfura-enock-nkumbuyedeni/)
-- 
+  
 # 🔭 Future Features:
 - Add more query to manage the database.
 - Integrate back-end.
