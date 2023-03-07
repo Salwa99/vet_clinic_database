@@ -9,6 +9,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+    - [Here is the schema diagram for the database](#here-is-the-schema-diagram-for-the-database)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -109,14 +110,15 @@ git clone https://github.com/Salwa99/vet_clinic_database.git
 - Twitter: [@SalwaBallouti](https://twitter.com/salwa_ballouti)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/salwa-ballouti)
   
-# 🔭 Future Features:
-- Add more query to manage the database.
-- Integrate back-end.
-
 👤 **Edenlisk**
 
 - GitHub: [@Edenlisk](https://github.com/edenlisk)
 - LinkedIn: [@Edenlisk](https://www.linkedin.com/in/nsanzimfura-enock-nkumbuyedeni/)
+- 
+# 🔭 Future Features:
+- Add more query to manage the database.
+- Integrate back-end.
+
 
 
 # 🤝 Contributing:
